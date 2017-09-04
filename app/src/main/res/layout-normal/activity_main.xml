@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/divbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickOperator"
+        android:text="@string/divbut"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/buteq"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multbut" />
+
+    <Button
+        android:id="@+id/but0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but0"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/butdot"
+        app:layout_constraintRight_toLeftOf="@+id/buteq"
+        app:layout_constraintTop_toBottomOf="@+id/but2" />
+
+    <Button
+        android:id="@+id/butdot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickClear"
+        android:text="@string/butclear"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/but0"
+        app:layout_constraintTop_toBottomOf="@+id/but1" />
+
+    <Button
+        android:id="@+id/buteq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickEqual"
+        android:text="@string/eqbut"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but0"
+        app:layout_constraintRight_toLeftOf="@+id/divbut"
+        app:layout_constraintTop_toBottomOf="@+id/but3" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but2"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but1"
+        app:layout_constraintRight_toLeftOf="@+id/but3"
+        app:layout_constraintTop_toBottomOf="@+id/but5" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but3"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/buteq"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but2"
+        app:layout_constraintRight_toLeftOf="@+id/multbut"
+        app:layout_constraintTop_toBottomOf="@+id/but6" />
+
+    <Button
+        android:id="@+id/multbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickOperator"
+        android:text="@string/multbut"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/divbut"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusbut" />
+
+    <Button
+        android:id="@+id/but6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but6"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but3"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but5"
+        app:layout_constraintRight_toLeftOf="@+id/minusbut"
+        app:layout_constraintTop_toBottomOf="@+id/but9" />
+
+    <Button
+        android:id="@+id/minusbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickOperator"
+        android:text="@string/minusbut"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/multbut"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbut" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but1"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/butdot"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/but2"
+        app:layout_constraintTop_toBottomOf="@+id/but4" />
+
+    <Button
+        android:id="@+id/but8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but8"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/but7"
+        app:layout_constraintRight_toLeftOf="@+id/but9"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but4"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/but5"
+        app:layout_constraintTop_toBottomOf="@+id/but7" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="199dp"
+        android:background="@android:color/background_light"
+        android:gravity="bottom"
+        android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textSize="80sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but7"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but4"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/but8"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <Button
+        android:id="@+id/but9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but9"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but6"
+        app:layout_constraintLeft_toRightOf="@+id/but8"
+        app:layout_constraintRight_toLeftOf="@+id/addbut"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <Button
+        android:id="@+id/but5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickNumber"
+        android:text="@string/but5"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/but2"
+        app:layout_constraintLeft_toRightOf="@+id/but4"
+        app:layout_constraintRight_toLeftOf="@+id/but6"
+        app:layout_constraintTop_toBottomOf="@+id/but8" />
+
+    <Button
+        android:id="@+id/addbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="onClickOperator"
+        android:text="@string/addbut"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/minusbut"
+        app:layout_constraintLeft_toRightOf="@+id/but9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+</android.support.constraint.ConstraintLayout>
