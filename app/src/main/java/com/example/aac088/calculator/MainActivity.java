@@ -12,6 +12,11 @@ import java.util.regex.Pattern;
 public class MainActivity extends AppCompatActivity {
 
     private TextView screen;
+    private Button one,two,three,four,five,six,seven,eight,nine,zero;
+    private Button add,mult,div,rest,equal_btn;
+    private Button pi_btn,sin_btn,cos_btn,tan_btn;
+    private Button log_n_btn,dot_btn, sqrt_btn, percent_btn,inverse_btn,exp_btn,fact_btn;
+    private Button clear_btn, back_btn, left_parentesis,right_parentesis;
     private String display="";
     private String currentOp="";
     private String result="";
@@ -20,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        screen=(TextView) findViewById(R.id.display);
+        screen=(TextView) findViewById(R.id.screen);
+
         screenUpdate();
     }
 
@@ -29,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickNumber(View v){
-        if(result != ""){
+        if(!result.isEmpty()){
             clear();
             screenUpdate();
         }
@@ -50,16 +56,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickOperator(View v){
-        if(display == "") return;
+        if(display.isEmpty()) return;
 
         Button b = (Button) v;
-        if(result !=""){
+        if(!result.isEmpty()){
             String _display=result;
             clear();
             display = _display;
         }
 
-        if(currentOp != ""){
+        if(!currentOp.isEmpty()){
             Log.d("CalcX", ""+display.charAt(display.length() -1));
             if(isOperator(display.charAt(display.length()-1))){
                 display=display.replace(display.charAt(display.length()-1),b.getText().charAt(0));
@@ -104,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean getResult(){
-        if(currentOp=="") return false;
+        if(currentOp.isEmpty()) return false;
         String[] operation = display.split(Pattern.quote(currentOp));
         if(operation.length < 2) return false;
         result = String.valueOf(operations(operation[0],operation[1],currentOp));
@@ -112,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickEqual(View v){
-        if(display=="")return;
+        if(display.isEmpty())return;
         if(!getResult())return;
         screen.setText(display + "\n" + String.valueOf(result));
     }
