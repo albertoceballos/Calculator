@@ -17,7 +17,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/screen"
         android:background="@android:color/transparent"
-        android:text="SIN"
+        android:text="@string/sin"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -29,7 +29,7 @@
         android:layout_toEndOf="@+id/sin_btn"
         android:layout_toRightOf="@+id/sin_btn"
         android:background="@android:color/transparent"
-        android:text="COS"
+        android:text="@string/cos"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -41,9 +41,9 @@
         android:layout_toEndOf="@+id/clear_btn"
         android:layout_toRightOf="@+id/clear_btn"
         android:background="@android:color/transparent"
-        android:text="BACK"
+        android:text="@string/back"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/eight_btn"
@@ -54,7 +54,7 @@
         android:layout_toEndOf="@+id/seven_btn"
         android:layout_toRightOf="@+id/seven_btn"
         android:background="@android:color/transparent"
-        android:text="8"
+        android:text="@string/but8"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -66,7 +66,7 @@
         android:layout_toEndOf="@+id/four_btn"
         android:layout_toRightOf="@+id/four_btn"
         android:background="@android:color/transparent"
-        android:text="5"
+        android:text="@string/but5"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -79,7 +79,7 @@
         android:layout_toEndOf="@+id/four_btn"
         android:layout_toRightOf="@+id/four_btn"
         android:background="@android:color/transparent"
-        android:text="2"
+        android:text="@string/but2"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -92,7 +92,7 @@
         android:layout_toEndOf="@+id/ln_btn"
         android:layout_toRightOf="@+id/ln_btn"
         android:background="@android:color/transparent"
-        android:text="0"
+        android:text="@string/but0"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -105,7 +105,7 @@
         android:layout_toEndOf="@+id/cos_btn"
         android:layout_toRightOf="@+id/cos_btn"
         android:background="@android:color/transparent"
-        android:text="TAN"
+        android:text="@string/tan"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -118,7 +118,7 @@
         android:layout_toEndOf="@+id/back_btn"
         android:layout_toRightOf="@+id/back_btn"
         android:background="@android:color/transparent"
-        android:text="("
+        android:text="@string/leftparentesis"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -131,7 +131,7 @@
         android:layout_toEndOf="@+id/back_btn"
         android:layout_toRightOf="@+id/back_btn"
         android:background="@android:color/transparent"
-        android:text="9"
+        android:text="@string/but9"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -144,7 +144,7 @@
         android:layout_toEndOf="@+id/five_btn"
         android:layout_toRightOf="@+id/five_btn"
         android:background="@android:color/transparent"
-        android:text="6"
+        android:text="@string/but6"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -157,7 +157,7 @@
         android:layout_toEndOf="@+id/five_btn"
         android:layout_toRightOf="@+id/five_btn"
         android:background="@android:color/transparent"
-        android:text="3"
+        android:text="@string/but3"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -170,7 +170,7 @@
         android:layout_toEndOf="@+id/two_btn"
         android:layout_toRightOf="@+id/two_btn"
         android:background="@android:color/transparent"
-        android:text="="
+        android:text="@string/eqbut"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -182,7 +182,7 @@
         android:layout_toEndOf="@+id/tan_btn"
         android:layout_toRightOf="@+id/tan_btn"
         android:background="@android:color/transparent"
-        android:text="!"
+        android:text="@string/factorial"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -194,7 +194,7 @@
         android:layout_toEndOf="@+id/left_parentesis_btn"
         android:layout_toRightOf="@+id/left_parentesis_btn"
         android:background="@android:color/transparent"
-        android:text=")"
+        android:text="@string/right_parentesis"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -206,7 +206,7 @@
         android:layout_toEndOf="@+id/nine_btn"
         android:layout_toRightOf="@+id/nine_btn"
         android:background="@android:color/transparent"
-        android:text="/"
+        android:text="@string/divbut"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -218,7 +218,7 @@
         android:layout_toEndOf="@+id/six_btn"
         android:layout_toRightOf="@+id/six_btn"
         android:background="@android:color/transparent"
-        android:text="*"
+        android:text="@string/multbut"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -231,7 +231,7 @@
         android:layout_toEndOf="@+id/six_btn"
         android:layout_toRightOf="@+id/six_btn"
         android:background="@android:color/transparent"
-        android:text="-"
+        android:text="@string/minusbut"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -243,7 +243,7 @@
         android:layout_toEndOf="@+id/three_btn"
         android:layout_toRightOf="@+id/three_btn"
         android:background="@android:color/transparent"
-        android:text="."
+        android:text="@string/dot"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -255,7 +255,7 @@
         android:layout_toEndOf="@+id/fact_btn"
         android:layout_toRightOf="@+id/fact_btn"
         android:background="@android:color/transparent"
-        android:text="^"
+        android:text="@string/pow"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -268,7 +268,7 @@
         android:layout_toEndOf="@+id/right_parentesis_btn"
         android:layout_toRightOf="@+id/right_parentesis_btn"
         android:background="@android:color/transparent"
-        android:text="SQRT"
+        android:text="@string/sqrt"
         android:textColor="@android:color/background_light"
         android:textSize="18sp" />
 
@@ -280,7 +280,7 @@
         android:layout_toEndOf="@+id/div_btn"
         android:layout_toRightOf="@+id/div_btn"
         android:background="@android:color/transparent"
-        android:text="%"
+        android:text="@string/percent"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -293,7 +293,7 @@
         android:layout_toEndOf="@+id/mult_btn"
         android:layout_toRightOf="@+id/mult_btn"
         android:background="@android:color/transparent"
-        android:text="1/X"
+        android:text="@string/inverse"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -305,7 +305,7 @@
         android:layout_toEndOf="@+id/minus_btn"
         android:layout_toRightOf="@+id/minus_btn"
         android:background="@android:color/transparent"
-        android:text="+"
+        android:text="@string/addbut"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -318,7 +318,7 @@
         android:layout_toEndOf="@+id/dot_btn"
         android:layout_toRightOf="@+id/dot_btn"
         android:background="@android:color/transparent"
-        android:text="PI"
+        android:text="@string/pi"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -330,7 +330,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/cos_btn"
         android:background="@android:color/transparent"
-        android:text="C"
+        android:text="@string/butclear"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -342,7 +342,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/clear_btn"
         android:background="@android:color/transparent"
-        android:text="7"
+        android:text="@string/but7"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -354,7 +354,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/seven_btn"
         android:background="@android:color/transparent"
-        android:text="4"
+        android:text="@string/but4"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -366,7 +366,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/four_btn"
         android:background="@android:color/transparent"
-        android:text="1"
+        android:text="@string/but1"
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
@@ -378,21 +378,36 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/one_btn"
         android:background="@android:color/transparent"
-        android:text="LN"
+        android:text=""
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/screen"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="120dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/preview"
         android:background="@android:color/background_light"
         android:gravity="bottom"
-        android:text="0"
+        android:text="@string/but0"
+        android:textAlignment="textEnd"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/sin_btn"
+        android:background="@android:color/background_light"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/sin_btn" />
 
 </RelativeLayout>
